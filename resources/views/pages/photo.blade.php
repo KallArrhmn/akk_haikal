@@ -146,9 +146,8 @@
                 @foreach ($data->comments as $comment)
                     <li class="list-group-item border-start-0 border-end-0 d-flex flex-column">
                         <div class="d-flex justify-content-between align-items-center">
-                            <a href="{{ route('profile.people', $comment->user->id) }}”
-                                class="d-flex
-                                justify-content-start align-items-center mb-2 text-decoration-none">
+                            <a href="{{ route('profile.people', $comment->user->id) }}"
+                                class="d-flex justify-content-start align-items-center mb-2 text-decoration-none">
                                 <img src="{{ $comment->user->avatar != null ? asset('storage/' . $comment->user->avatar) : 'https://dummyimage.com/640x1:1/' }}"
                                     alt="profile-picture" width="50" height="50"
                                     style="object-fit: cover; border-radius: 100%">
